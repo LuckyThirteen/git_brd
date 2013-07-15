@@ -1,0 +1,13 @@
+#!/usr/bin/ruby
+
+lib = File.expand_path(File.dirname(__FILE__) + '/../lib')
+$LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)
+
+require 'git_brd'
+require 'highline/import'
+
+executioner = GitBrd::BranchExecutioner.new(ARGV.first)
+
+if agree("Are you sure you want to delete the following branches (y/n)?\n\t#{executioner.matching_branches.join("\n\t")}", true)
+  executioner.delete_matching_branches!
+end
