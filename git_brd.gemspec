@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['baloghzsof@gmail.com']
   spec.description   = %q{custom git command for deleting local branches matching a given regex}
   spec.summary       = %q{Git branch regex delete}
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/LuckyThirteen/git_brd'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
