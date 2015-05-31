@@ -4,10 +4,7 @@ Custom git command for deleting local branches matching a given (ruby style) reg
 
 ## Installation
 
-
-  $ gem install specific_install
-
-  $ gem specific_install -l git@github.com:LuckyThirteen/git_brd.git
+  $ gem install git_brd
 
 ## Usage
 
