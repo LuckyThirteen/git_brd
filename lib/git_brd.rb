@@ -1,4 +1,4 @@
-require "git_brd/version"
+require 'git_brd/version'
 require 'git'
 
 module GitBrd
@@ -13,7 +13,7 @@ module GitBrd
   	end
 
   	def delete_matching_branches!
-  		matching_branches.each &:delete
+  		matching_branches.each(&:delete)
   	end
   end
 end
